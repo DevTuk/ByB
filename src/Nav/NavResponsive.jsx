@@ -21,28 +21,69 @@ const NavResponsive = () => {
 								strokeLinejoin='round'
 								strokeWidth='2'
 								d='M4 6h16M4 12h16M4 18h7'
+								color='red'
 							/>
 						</svg>
 					</label>
 					<ul
 						tabIndex={0}
-						className='menu bg-black menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52 lg:hidden'
+						className='menu bg-black menu-sm dropdown-content z-[1] shadow rounded w-52 lg:hidden '
 					>
-						<li>
-							<a>Institucional</a>
-						</li>
-						<li>
-							<a>Nosotros</a>
-						</li>
-						<li>
-							<a>Historia</a>
-						</li>
-						<li>
-							<a>Noticias</a>
-						</li>
-						<li>
-							<a>Contacto</a>
-						</li>
+						<div className='collapse text-start hover:bg-primary hover:text-black'>
+							<input
+								type='checkbox'
+								className='peer '
+							/>
+							<div className='collapse-title peer-checked:bg-primary peer-checked:text-black'>
+								Institucional
+							</div>
+							<div className='collapse-content peer-checked:bg-primary peer-checked:text-black'>
+								<li>
+									<a>Historia</a>
+								</li>
+								<li>
+									<a>Cuerpo Técnico</a>
+								</li>
+							</div>
+						</div>
+						<div className='collapse text-start hover:bg-primary hover:text-black'>
+							<input
+								type='checkbox'
+								className='peer'
+							/>
+							<div className='collapse-title peer-checked:bg-primary peer-checked:text-black'>
+								Equipo
+							</div>
+							<div className='collapse-content peer-checked:bg-primary text-black'>
+								<li>
+									<a>Plantel</a>
+								</li>
+								<li>
+									<a>Leyendas</a>
+								</li>
+							</div>
+						</div>
+						<div className='collapse  text-start hover:bg-primary hover:text-black'>
+							<input
+								type='checkbox'
+								className='peer'
+							/>
+							<div className='collapse-title'>Nosotros</div>
+						</div>
+						<div className='collapse  text-start hover:bg-primary hover:text-black'>
+							<input
+								type='checkbox'
+								className='peer'
+							/>
+							<div className='collapse-title'>Noticias</div>
+						</div>
+						<div className='collapse  text-start hover:bg-primary hover:text-black'>
+							<input
+								type='checkbox'
+								className='peer'
+							/>
+							<div className='collapse-title'>Contacto</div>
+						</div>
 					</ul>
 				</div>
 			</div>{' '}
