@@ -3,7 +3,7 @@ import React from 'react'
 const NavResponsive = () => {
 	return (
 		<>
-			<div className='navbar-end'>
+			<div className='navbar-end items-end ml-32'>
 				<div className='dropdown dropdown-end lg:hidden '>
 					<label
 						tabIndex={0}
@@ -27,7 +27,7 @@ const NavResponsive = () => {
 					</label>
 					<ul
 						tabIndex={0}
-						className='menu bg-black menu-sm dropdown-content z-[1] shadow rounded w-52 lg:hidden '
+						className='menu bg-black menu-sm dropdown-content z-[1] shadow rounded w-52  lg:hidden '
 					>
 						<div className='collapse text-start hover:bg-primary hover:text-black'>
 							<input
